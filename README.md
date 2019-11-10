@@ -1,4 +1,4 @@
-# JokeExtension
+# Joker
 A chrome extension that plays jokes on you.
 
 ## Current Shenanigans
