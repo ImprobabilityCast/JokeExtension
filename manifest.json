@@ -1,0 +1,19 @@
+{
+    "name": "Joker",
+    "version": "1.0",
+    "description": "Why you hav be mad? Is only joke.",
+
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.youtube.com/watch?*",
+        "*://*.youtube.com/embed/*"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+
+    "manifest_version": 2
+}
