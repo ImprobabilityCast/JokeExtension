@@ -1,19 +1,29 @@
 {
+    "manifest_version": 2,
     "name": "Joker",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Why you hav be mad? Is only joke.",
+
+    "icons": {
+        "48": "icons/rainbow-48.png"
+    },
 
     "permissions": [
         "storage",
         "webRequest",
         "webRequestBlocking",
         "*://*.youtube.com/watch?*",
-        "*://*.youtube.com/embed/*"
+        "*://*.youtube.com/embed/*",
+        "http://localhost/*"
     ],
     "background": {
         "scripts": ["background.js"],
         "persistent": true
     },
-
-    "manifest_version": 2
+    "content_scripts": [
+        {
+          "matches": ["http://localhost/*"],
+          "js": ["/redSquiggles.js"]
+        }
+    ]
 }
