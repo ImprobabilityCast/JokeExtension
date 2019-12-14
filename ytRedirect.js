@@ -37,7 +37,7 @@ function isSubstringOfURL(urlArray, url) {
 }
 
 chrome.runtime.onInstalled.addListener(function () {
-    console.log("loaded");
+    console.log("loaded.");
 });
 
 chrome.webRequest.onBeforeRequest.addListener(function (details) {

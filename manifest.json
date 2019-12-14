@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Joker",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Why you hav be mad? Is only joke.",
 
     "icons": {
@@ -17,7 +17,7 @@
         "*://*/*"
     ],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["ytRedirect.js"],
         "persistent": true
     },
     "content_scripts": [
